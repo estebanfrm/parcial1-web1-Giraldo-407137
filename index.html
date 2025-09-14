@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div id="logo">
+            <img src="./assets/img/logoface.png" alt="">
+        </div>
+        <form role="search" aria-label="Buscar en la aplicacion">
+            <label for="q">Buscar</label>
+            <input id="q" type="search" placeholder="Buscar en Facebook">
+            <button type="submit">🔍</button>
+        </form>
+    </header>
+
+    <nav aria-label="Secciones principales">
+        <a href="#/muro" class="nav-link" aria-current="page">Muro</a>
+        <a href="#/info" class="nav-link">Info</a>
+        <a href="#/photos" class="nav-link">Photos</a>
+        <a href="#/boxes" class="nav-link">Boxes</a>
+    </nav>
+
+    <main id="app" class="app-layout">
+        <aside class="sidebar" aria-label="Perfil">
+            <section class="card profile-card">
+                <img class-avatar src="/assets/img/perfil.png" alt="Avatar de usuario">
+                <h2 class="profie-name">Esteban Giraldo</h2>
+
+                <dl class="profile-info">
+                    <div><dt>Informacion</dt><dd>Estudiante web 1</dd></div>
+                    <div><dt>Ciudad</dt><dd>Cali</dd></div>
+                    <div><dt>Amigos</dt><dd>256</dd></div>
+                </dl>
+
+                <a class="see-all" href="#">Ver todos</a>
+            </section>
+        </aside>
+
+        <section class="content" id="view" tabindex="-1">
+            <!-- Aquí se cargará el contenido dinámico por JS-->
+
+    </main>
+
+    <footer class="site-footer">
+        <small>&copy 2025 Parcial Esteban</small>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
